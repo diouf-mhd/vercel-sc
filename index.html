@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sama Auto - Télécharger l'Application 🇸🇳</title>
+  
+  <!-- Icônes Lucide pour le style -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --primary: #FFCC00; /* Jaune BRT */
+      --secondary: #00853f; /* Vert Sénégal */
+      --dark: #111827;
+      --light: #F8FAFC;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Background décoratif */
+    .bg-gradient {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 400px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      clip-path: ellipse(150% 100% at 50% 0%);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 450px;
+      width: 90%;
+      margin: 60px auto 40px;
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    .header-logo {
+      background: var(--dark);
+      padding: 40px 20px;
+      color: var(--primary);
+    }
+
+    .logo-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--primary);
+      color: var(--dark);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 40px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    h1 { margin: 0; font-size: 32px; font-weight: 900; letter-spacing: -1px; }
+    .tagline { opacity: 0.8; font-size: 14px; margin-top: 5px; text-transform: uppercase; font-weight: bold; }
+
+    .content { padding: 30px 25px; }
+
+    .description {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #4B5563;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-decoration: none;
+      padding: 16px;
+      border-radius: 18px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-apk {
+      background: var(--secondary);
+      color: white;
+      box-shadow: 0 8px 20px rgba(0, 133, 63, 0.3);
+    }
+
+    .btn-apk:hover { transform: translateY(-2px); background: #006d33; }
+
+    .btn-web {
+      background: var(--primary);
+      color: var(--dark);
+      box-shadow: 0 8px 20px rgba(255, 204, 0, 0.3);
+    }
+
+    .btn-web:hover { transform: translateY(-2px); }
+
+    .ios-notice {
+      background: #FFFBEB;
+      border: 1px solid #FEF3C7;
+      border-radius: 18px;
+      padding: 15px;
+      margin: 20px 0;
+      font-size: 13px;
+      color: #92400E;
+    }
+
+    /* Section Portfolio Développeur */
+    .dev-card {
+      margin: 20px 25px 0;
+      padding: 20px;
+      background: #F1F5F9;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      text-align: left;
+      text-decoration: none;
+      color: inherit;
+      transition: 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .dev-card:hover {
+      border-color: var(--secondary);
+      background: white;
+    }
+
+    .dev-photo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid var(--primary);
+      object-cover: cover;
+    }
+
+    .dev-info h4 { margin: 0; font-size: 16px; color: var(--dark); }
+    .dev-info p { margin: 2px 0 0; font-size: 12px; color: #64748B; }
+    .portfolio-link { font-size: 11px; color: var(--secondary); font-weight: bold; margin-top: 5px; display: block; }
+
+    footer {
+      font-size: 11px;
+      color: #94A3B8;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-gradient"></div>
+
+  <div class="container">
+    <div class="header-logo">
+      <div class="logo-icon">🚌</div>
+      <h1>Sama Auto</h1>
+      <div class="tagline">Le Transport Sénégalais au bout des doigts</div>
+    </div>
+
+    <div class="content">
+      <p class="description">
+        Simplifiez vos trajets à Dakar avec <strong>Sama Auto</strong>. 
+        Recherchez les lignes <strong>TATA</strong> et <strong>Dakar Dem Dikk</strong> en un clic et trouvez le bus idéal pour votre destination.
+      </p>
+
+      <!-- Bouton Téléchargement APK -->
+      <a href="sama-car.apk" class="btn btn-apk">
+        <i data-lucide="download"></i>
+        Télécharger l'APK Android
+      </a>
+
+      <!-- Notice pour iOS -->
+      <div class="ios-notice">
+        <strong>Utilisateur iOS (iPhone) ?</strong><br>
+        L'application n'est pas encore sur l'App Store. Utilisez la version web optimisée ci-dessous.
+      </div>
+
+      <!-- Bouton Version Web -->
+      <a href="https://sama-auto.vercel.app" class="btn btn-web">
+        <i data-lucide="globe"></i>
+        Ouvrir la version Web
+      </a>
+
+      <!-- Carte Développeur / Portfolio -->
+      <a href="https://moussadioufportfolio.kesug.com" target="_blank" class="dev-card">
+        <img src="moussa.jpg" alt="Moussa Diouf" class="dev-photo">
+        <div class="dev-info">
+          <h4>Moussa Diouf</h4>
+          <p>Ingénieur IT • Développeur Fullstack</p>
+          <span class="portfolio-link">Visiter mon portfolio →</span>
+        </div>
+      </a>
+
+      <footer>© 2026 SAMA TRANSIT • DAKAR, SÉNÉGAL</footer>
+    </div>
+  </div>
+
+  <script>
+    // Initialise les icônes
+    lucide.createIcons();
+  </script>
+</body>
+</html>
